@@ -4,7 +4,7 @@ resource "aws_instance" "ec2" {
     tags = {
         Name = "Ec2"
     }
-    vpc_security_group_ids = [aws_security_group.allow-all-ports.id]
+    vpc_security_group_ids = [aws_security_group.sg.id]
   
 }
 resource "aws_security_group""sg"{
